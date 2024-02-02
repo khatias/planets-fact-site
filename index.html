@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Spartan' rel='stylesheet'>
     <script  src="app.js" defer></script>
     <title>planets fact site</title>
 </head>
 <body>
     <header>
         <h1>THE PLANETS</h1>
-        <ul class="side-nav" id="sideNav">
+        <ul class="side-nav" id="sideNav" >
             <li class="planet" id="mercury">
                 <div class="planet-circle">
                     <span class="circle" style="background-color: #DEF4FC"></span>
@@ -73,14 +74,61 @@
             <hr class="planet-underline">
            
         </ul>
+
         <a href="javascript:void(0);" class="open-icon" onclick="openNav()">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z"/></g></svg>
         </a>
         <a href="javascript:void(0)" class="close-icon"  onclick="closeNav()">&times;</a>
-
     </header>
+
     <hr>
-    
+
+           
+
+    <main>
+        <section class="hero">
+        <div class="planetary-details">
+            <button id="overview"><span>01</span>Overview</button>
+            <button id="structure"><span>02</span>Structure</button>
+            <button id="geology"><span>03</span>Surface </button>
+            
+        </div>
+        <hr class="planetary-details-underline">
+
+            <div class="planet-image-div">
+                <img id="planet-image" src="" alt="">
+                <img id="image-surface" src="" alt="">
+            </div>
+
+            <div class="planet-information">
+                <h2 id="planet-title"></h2>
+                <p id="about-planet"></p>
+                <a id="wikipedia-source" target="_blank">Source : <span> Wikipedia</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="#FFF" d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z" opacity=".5"/></svg>
+                </a>
+            </div>
+        </section>
+       <section class="facts">
+        <span class="facts-box">
+            <p class="facts-title">ROTATION TIME</p>
+            <p class="fact-value" id="rotation-time"></p>
+        </span>
+        <span  class="facts-box" >
+            <p class="facts-title">REVOLUTION TIME</p>
+            <p class="fact-value" id="revolution-time"></p>
+        </span>
+        <span  class="facts-box">
+            <p class="facts-title">radius</p>
+            <p class="fact-value" id="radius"></p>
+        </span>
+        <span  class="facts-box">
+            <p class="facts-title">AVERAGE TEMP.</p>
+            <p class="fact-value" id="average-temp"></p>
+        </span>
+       </section>
+       
+    </main>
+   
 </body>
 
     </html>
